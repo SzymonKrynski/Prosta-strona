@@ -1,0 +1,136 @@
+<!DOCTYPE HTML>
+ <html lang="pl">
+ <head>
+   <meta charset="utf-8">
+   <title> Odc2 24.09.2018 </title>
+   
+   <meta name="discription"  content="zmiana pracy, rozwój, zmiana życia">
+   <meta name="keywords"     content="praca, rozwój, html">
+   <meta name="author"       content="Szymon Kryński">
+   
+   <meta http-equiv="X-Ua-Compatible" content="IE=edge, chrome=1"> 
+   
+   <link rel="stylesheet" href="style.css"  type="text/css" >
+   
+   <style>
+     #container
+     {  
+        width: 1000px;
+		margin-left: auto;
+		margin-right: auto; 
+		 <!-- bo niby skąd mam wiedziećk ile pikseli marginesu ustawić. Użytkownik na innym komputerze może mieć
+		     rozdzielczość 1366x768 lub 1920x1080 i możliwe, że przeglądarka nie zajmuje całego ekranu 
+		     my mówimy zajmij się marginesami automatycznie -->
+		
+     }	 
+	 
+     #logo
+	 {
+	    background-color: black; 
+		color: white; 
+		text-align: center;
+		padding: 15px; 
+		 <!-- nie trzeba pisać width: 1000px, ponieważ odziedziczy szerokość po id container -->
+		<!-- jeśli byśmy napisali samo: align, mogło by to znaczy, ze chcemy wypośrodkować całego diva a nie tylko tekst,
+		     więc dopisujem text-align -->
+	    <!-- padding odległość od tekstu z każdej strony, tekst mamy wypośrodkowany, więc z prawej i lewej i tak będzie 
+		     więcej odstępu -->
+			 
+	 }
+	 
+	 #nav
+	 {
+	   float: left;
+	   background-color: lightgray;
+	   width: 120px;
+	   min-height: 620px;
+	   padding: 10px;
+	   <!-- padding został zrobiony tak, jak dla loga, min-height: 620px, bo div ad czyli adblock, adsens znaczy reklama 
+	        ma width 600px, myszę wyjaśnić dlaczego jest min-height: -->
+	   <!-- float: left; nie działa dopóki nie wpiszemy parametrów, wartości wszystkich divów, aby mogły się ustawić --> 
+	   
+	 }
+	
+	 
+	 #content
+	 {
+	   float: left;
+	   width: 640px;
+	   padding: 20px
+	 }
+	 
+     #ad
+	 {
+	   float: left;
+	   width: 160px;
+	   min-height: 620px;
+	   padding: 10px;
+	   background-color: lightgray;
+	 }
+	 
+     #footer
+	 {
+	   clear: both;
+	   background-color: black; <!-- clear: both; -->
+	   color: white;
+	   text-align: center;
+	   padding: 20px;
+	  
+	 }
+	 
+   </style>
+   
+  </head>
+  
+  
+  <body>
+    <div id="container">
+	
+	  <div id="logo">
+	    <h1> Najlepsze seriale! Subiektywne TOP-5 </h1>
+	  
+	  </div>
+	  
+	   <div id="nav">
+	    Dr House           <br />
+		True Detectiv      <br />
+		Breaking Bad       <br />
+		Z Archiwum X       <br />
+		Oni, ona i Pizzeri <br />
+	   
+	   </div>
+	   
+	   <div id="content" >
+	   <h2> Dr House </h2>
+	   
+	     Dr House
+		 Fabuła serialu koncentruje się na osobie dr Gregory’ego House’a (Hugh Laurie),<br />
+		 niekonwencjonalnego, szalonego, a zarazem genialnego lekarza, kierującego zespołem diagnostycznym w fikcyjnym Szpitalu Klinicznym Princeton-Plainsboro (PPTH) w New Jersey. 
+		 <br />
+		 W każdym odcinku dr House wraz ze swoim zespołem próbuje zdiagnozować i wyleczyć pacjentów przejawiających rozmaite objawy, niewyjaśnione wcześniej przez innych lekarzy. W pierwszych trzech seriach zespół dra House’a tworzyli: dr Allison Cameron (Jennifer Morrison), dr Robert Chase (Jesse Spencer) i dr Eric Foreman (Omar Epps), od czwartej serii dr Chris Taub (Peter Jacobson), dr Lawrence Kutner (Kal Penn) oraz dr Remy „Trzynastka” Hadley (Olivia Wilde), w siódmym sezonie w zespole pojawiła się Martha Masters (Amber Tamblyn), a w ósmym do zespołu dochodzą dr Chi Park (Charlyne Yi) oraz lekarka z więzienia dr Jessica Adams (Odette Annable). Ponadto serial ukazuje prywatne życie House’a i członków jego zespołu, najlepszego i jedynego przyjaciela dr Jamesa Wilsona (Robert Sean Leonard), ordynatora oddziału onkologii oraz dr Lisy Cuddy (Lisa Edelstein), dyrektor szpitala Princeton‑Plainsboro.
+	   
+	   </div>
+	   
+	    <div id="ad">
+		   <img src="reklama.jpg" />
+		</div>
+	   
+	   <div id="footer">
+	     Najlepsze seriale T0P-5! &copy; Wszelkie prawa zastrzeżone
+	   </div>
+	  
+	
+	
+	
+	
+  
+  
+  
+    </div>
+  </body>
+  
+  
+  
+  
+  
+  </html>
